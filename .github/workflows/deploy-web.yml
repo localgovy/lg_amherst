@@ -29,7 +29,7 @@ jobs:
         run: npm install --no-fund --no-audit
 
       - name: Export static web build
-        run: npx expo export -p web --base-path /lg_amherst
+        run: npx expo export -p web
         env:
           CI: "1"
 

@@ -25,6 +25,9 @@
       "bundler": "metro",
       "output": "static"
     },
+    "experiments": {
+      "baseUrl": "/lg_amherst"
+    },
     "plugins": [
       "expo-router",
       [
