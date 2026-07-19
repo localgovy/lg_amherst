@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
   percentage: {
     fontFamily: theme.typography.bodyBold.fontFamily,
     fontSize: theme.typography.body.fontSize,
-    fontWeight: '700',
     color: theme.colors.accentDark,
     marginLeft: theme.spacing.sm,
   },

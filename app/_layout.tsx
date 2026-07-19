@@ -8,7 +8,7 @@
  */
 
 import { useEffect } from 'react';
-import { Text, TextInput } from 'react-native';
+import { Platform, Text, TextInput } from 'react-native';
 import { Stack } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as SplashScreen from 'expo-splash-screen';
@@ -29,10 +29,26 @@ import { fonts } from '../theme';
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
 // Default all text to Work Sans so even un-tokenized text stays on-brand.
+// fontWeight must stay 'normal' — each loaded face is its own family name, and
+// setting a numeric weight on web makes the browser miss @font-face and fall back.
+const defaultTextStyle = { fontFamily: fonts.sans, fontWeight: 'normal' as const };
 const TextAny = Text as unknown as { defaultProps?: { style?: unknown } };
 const TextInputAny = TextInput as unknown as { defaultProps?: { style?: unknown } };
-TextAny.defaultProps = { ...(TextAny.defaultProps || {}), style: { fontFamily: fonts.sans } };
-TextInputAny.defaultProps = { ...(TextInputAny.defaultProps || {}), style: { fontFamily: fonts.sans } };
+TextAny.defaultProps = { ...(TextAny.defaultProps || {}), style: defaultTextStyle };
+TextInputAny.defaultProps = { ...(TextInputAny.defaultProps || {}), style: defaultTextStyle };
+
+if (Platform.OS === 'web' && typeof document !== 'undefined') {
+  const style = document.createElement('style');
+  style.id = 'amherst-font-defaults';
+  style.textContent = `
+    html, body, #root {
+      font-family: ${fonts.sans}, system-ui, sans-serif;
+    }
+  `;
+  if (!document.getElementById(style.id)) {
+    document.head.appendChild(style);
+  }
+}
 
 export default function RootLayout() {
   const [fontsLoaded, fontError] = useFonts({

@@ -398,7 +398,6 @@ const styles = StyleSheet.create({
   infoValue: {
     ...theme.typography.body,
     color: theme.colors.text,
-    fontWeight: '600',
   },
   address: {
     ...theme.typography.caption,

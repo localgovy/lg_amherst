@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
   headerText: {
     fontFamily: theme.typography.heading.fontFamily,
     fontSize: 20,
-    fontWeight: '700',
     color: theme.colors.primary,
     letterSpacing: -0.2,
   },

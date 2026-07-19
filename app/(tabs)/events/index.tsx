@@ -408,20 +408,17 @@ const styles = StyleSheet.create({
     ...theme.typography.small,
     color: '#fff',
     fontSize: 9,
-    fontWeight: '600',
     textTransform: 'uppercase',
   },
   dateMonth: {
     ...theme.typography.label,
     color: '#fff',
     fontSize: 10,
-    fontWeight: '700',
   },
   dateNum: {
     ...theme.typography.heading,
     color: '#fff',
     fontSize: 16,
-    fontWeight: '700',
   },
   dateTextPast: {
     color: theme.colors.darkGray,

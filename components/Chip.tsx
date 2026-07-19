@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
   chipText: {
     fontFamily: theme.typography.bodyBold.fontFamily,
     fontSize: theme.typography.caption.fontSize,
-    fontWeight: '600',
     color: theme.colors.textSecondary,
   },
   chipTextSelected: {

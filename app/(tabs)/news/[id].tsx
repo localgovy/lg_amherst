@@ -282,14 +282,12 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: theme.colors.accentDark,
     marginBottom: theme.spacing.md,
-    fontWeight: '600',
     textTransform: 'uppercase',
     letterSpacing: 1,
   },
   title: {
     fontFamily: theme.typography.display.fontFamily,
     fontSize: 32,
-    fontWeight: '700',
     color: theme.colors.primary,
     marginBottom: theme.spacing.lg,
     lineHeight: 38,
@@ -298,7 +296,6 @@ const styles = StyleSheet.create({
   summary: {
     fontFamily: theme.typography.body.fontFamily,
     fontSize: 20,
-    fontWeight: '400',
     color: theme.colors.textSecondary,
     marginBottom: theme.spacing.xl,
     lineHeight: 30,
@@ -308,7 +305,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: theme.colors.text,
     lineHeight: 32,
-    fontWeight: '400',
     letterSpacing: 0.1,
   },
   divider: {

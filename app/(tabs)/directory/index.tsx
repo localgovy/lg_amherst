@@ -482,12 +482,10 @@ const styles = StyleSheet.create({
   phone: {
     ...theme.typography.caption,
     color: theme.colors.brand,
-    fontWeight: '600',
   },
   viewDetails: {
     ...theme.typography.caption,
     color: theme.colors.accent,
-    fontWeight: '700',
   },
   sortButton: {
     flexDirection: 'row',

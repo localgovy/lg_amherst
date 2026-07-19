@@ -106,11 +106,16 @@ export const theme = {
     xl: 32,
   },
   typography: {
+    // NOTE: Do not set fontWeight alongside these fontFamily values.
+    // Each @expo-google-fonts face is registered as its own family name
+    // (e.g. WorkSans_700Bold). On web, pairing that with fontWeight: '700'
+    // makes the browser miss the @font-face and fall back to a system font.
+    // Weight is already encoded in the family name — use that alone.
+
     // Display — hero editorial serif
     display: {
       fontFamily: fonts.serifBold,
       fontSize: 34,
-      fontWeight: '700' as const,
       lineHeight: 42,
       letterSpacing: -0.4,
     },
@@ -118,7 +123,6 @@ export const theme = {
     title: {
       fontFamily: fonts.serifBold,
       fontSize: 28,
-      fontWeight: '700' as const,
       lineHeight: 36,
       letterSpacing: -0.3,
     },
@@ -126,7 +130,6 @@ export const theme = {
     heading: {
       fontFamily: fonts.serifBold,
       fontSize: 22,
-      fontWeight: '700' as const,
       lineHeight: 29,
       letterSpacing: -0.2,
     },
@@ -134,7 +137,6 @@ export const theme = {
     subheading: {
       fontFamily: fonts.serifBold,
       fontSize: 18,
-      fontWeight: '700' as const,
       lineHeight: 25,
       letterSpacing: 0,
     },
@@ -142,7 +144,6 @@ export const theme = {
     body: {
       fontFamily: fonts.sans,
       fontSize: 16,
-      fontWeight: '400' as const,
       lineHeight: 24,
       letterSpacing: 0,
     },
@@ -150,7 +151,6 @@ export const theme = {
     bodyBold: {
       fontFamily: fonts.sansSemibold,
       fontSize: 16,
-      fontWeight: '600' as const,
       lineHeight: 24,
       letterSpacing: 0,
     },
@@ -158,7 +158,6 @@ export const theme = {
     caption: {
       fontFamily: fonts.sansMedium,
       fontSize: 14,
-      fontWeight: '500' as const,
       lineHeight: 20,
       letterSpacing: 0.1,
     },
@@ -166,7 +165,6 @@ export const theme = {
     small: {
       fontFamily: fonts.sansMedium,
       fontSize: 12,
-      fontWeight: '500' as const,
       lineHeight: 18,
       letterSpacing: 0.2,
     },
@@ -174,7 +172,6 @@ export const theme = {
     label: {
       fontFamily: fonts.sansSemibold,
       fontSize: 11,
-      fontWeight: '600' as const,
       lineHeight: 16,
       letterSpacing: 1.4,
       textTransform: 'uppercase' as const,

@@ -278,7 +278,6 @@ const styles = StyleSheet.create({
   },
   optionText: {
     ...theme.typography.body,
-    fontWeight: '600',
     color: '#fff',
     flex: 1,
   },

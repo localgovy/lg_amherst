@@ -703,7 +703,6 @@ const styles = StyleSheet.create({
   botName: {
     ...theme.typography.caption,
     color: theme.colors.brand,
-    fontWeight: '600',
     marginBottom: theme.spacing.xs,
   },
   messageText: {
