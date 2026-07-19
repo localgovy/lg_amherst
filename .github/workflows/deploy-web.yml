@@ -19,13 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: "22.16"
           cache: npm
-      - run: npm ci
-      - run: npx expo export -p web --base-path /lg_amherst
-      - uses: actions/upload-pages-artifact@v3
+
+      - name: Install dependencies
+        run: npm install --no-fund --no-audit
+
+      - name: Export static web build
+        run: npx expo export -p web --base-path /lg_amherst
+        env:
+          CI: "1"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
