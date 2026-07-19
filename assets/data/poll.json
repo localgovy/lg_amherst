@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "question": "Amherst's draft Recreation Master Plan proposes a new splash pad at Dickey Park. Do you support this investment?",
+    "description": "The Town's first Recreation Master Plan in over a decade is open for public feedback through the fall. A splash pad is one of several proposed capital projects.",
+    "options": [
+      { "id": "a", "text": "Yes, it's a great addition for families", "votes": 0 },
+      { "id": "b", "text": "No, funds should go elsewhere", "votes": 0 },
+      { "id": "c", "text": "Support it, but only with outside funding", "votes": 0 },
+      { "id": "d", "text": "Not sure / need more information", "votes": 0 }
+    ]
+  },
+  {
+    "id": "2",
+    "question": "Should the Victoria Street boardwalk extension include interpretive signage on local Mi'kmaq and Acadian history?",
+    "description": "The next phase of the marsh boardwalk is set to begin construction this fall. Council is considering interpretive panels along the new stretch.",
+    "options": [
+      { "id": "a", "text": "Yes, it adds real educational value", "votes": 0 },
+      { "id": "b", "text": "Keep it simple, skip the signage", "votes": 0 },
+      { "id": "c", "text": "Yes, but partner with local historians first", "votes": 0 },
+      { "id": "d", "text": "No strong opinion either way", "votes": 0 }
+    ]
+  }
+]

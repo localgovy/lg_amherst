@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Town Hall Reception",
+    "title": "General Inquiries & Customer Service",
+    "department": "Town Hall",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "2",
+    "name": "Building & Permits",
+    "title": "Building Permits & Inspections",
+    "department": "Planning & Economic Development",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "3",
+    "name": "Planning & Economic Development",
+    "title": "Planning, Zoning & Development",
+    "department": "Planning & Economic Development",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "4",
+    "name": "Public Works",
+    "title": "Roads, Water, Sewer & Snow Clearing",
+    "department": "Public Works",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "5",
+    "name": "Amherst Fire Department",
+    "title": "Fire Prevention & Emergency Response",
+    "department": "Fire",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "6",
+    "name": "Amherst Police Department",
+    "title": "Non-Emergency Policing",
+    "department": "Police",
+    "phone": "902-667-8600",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "7",
+    "name": "Recreation & Community Living",
+    "title": "Recreation Programs & Facility Bookings",
+    "department": "Community Living",
+    "phone": "902-667-3352",
+    "email": "info@amherst.ca"
+  },
+  {
+    "id": "8",
+    "name": "Public Works After-Hours Dispatch",
+    "title": "After-Hours Municipal Emergencies",
+    "department": "Operations",
+    "phone": "902-667-7227",
+    "email": "info@amherst.ca"
+  }
+]
